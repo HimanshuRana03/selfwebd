@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms2</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Form</legend>
+            <form >
+        <label for="date">
+           enter the date <input type="date" id="date">
+        </label>
+        <br>
+        <label for="choose">Choose your chips</label>
+        <select name="chips" id="choose"><!--multiple lagake multiple options choose kar sakte hai-->
+            <option value="lays">Lays</option>
+            <option value="kur">Kurkure</option>
+            <option value="crax">Crax</option>
+        </select>
+        <br>
+        <label for="field1">Text</label>
+        <input type="text" name="field1" id="field1">
+        <br>
+        <label for="gender"><!--same namem denge toh ek hi select hoga -->
+            <input type="radio" name="select" id="gender">Male
+            <input type="radio" name="select" id="gender">Female
+        </label>
+        <br>
+        <label for="file">
+            Choose<input type="file" name="fileselect" id="file"><!--size se ek particular file ke size ko restrict kar sakte hai-->
+        </label>
+        <br>
+        <button>Submit</button>
+         </form>
+        </fieldset>
+    </body>
+</html>
