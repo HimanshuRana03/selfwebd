@@ -1,0 +1,14 @@
+p{
+    font-size: small;
+    font-weight: 100;
+    font-style: italic;
+    line-height: normal;
+    color:blue;
+    background-color: rgb(247, 135, 135);
+}
+#firstpara{
+    background-color: rgb(141, 119, 119);
+}
+#secondpara{
+    background-color: bisque;
+}
