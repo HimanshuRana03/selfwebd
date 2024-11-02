@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>displayproperty</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;/*ye lagane se box ki size retain rahega margin padding add karne ke baad bhi*/
+            }
+            #blockelement{
+                background-color: yellow;
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                padding: 10px;
+            }
+            #inlineelement{
+                background-color: aqua;
+                /*yahape na width,height,pe koi asar nahi padta*/
+                border: 2px solid red;
+                /*inline ko block mai convert kaise karenge display ka use karke*/
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Display property</h1>
+        <!--display properties:inline,block,none,inline-block-->
+        <p id='blockelement'>hello</p>
+        <span id="inlineelement">Himanshu</span>
+        <span id="inlineelement">Himanshu</span>
+    </body>
+</html>
