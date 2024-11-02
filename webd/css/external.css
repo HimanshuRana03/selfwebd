@@ -16,7 +16,7 @@ h1{
     background-color: brown;
     color: beige;
 }
-p,h1{/*group selector */
+p,h1{/*group selector*/
     color:blue;
     font-size: 25px;
 }
