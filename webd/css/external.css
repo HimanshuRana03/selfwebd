@@ -1,0 +1,22 @@
+p{/*element selector*/
+    background-color: azure;
+    color: blue;
+}
+h1{
+    color: aliceblue;
+    background-color: black;
+}
+#idselector{/*id selector*/
+    font-style: italic;
+    background-color: blueviolet;
+    color: aqua;
+}
+.classselector{/*class selector*/
+    font-style: oblique;
+    background-color: brown;
+    color: beige;
+}
+p,h1{/*group selector*/
+    color:blue;
+    font-size: 25px;
+}
