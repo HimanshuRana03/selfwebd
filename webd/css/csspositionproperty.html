@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css position property</title>
+        <style>
+            div{
+                border: 2px solid black;
+                height: 500px;
+               
+            }
+            .box{
+                position: relative;
+            }
+            img{
+                margin: 2px;;
+            }
+            .container1{
+                border: 2px solid blue;
+                position: relative;
+                /*top left right bottom 
+                gap us particular image ka hamesha intact rahega*/
+                top: 20px;
+            }
+            .container2{
+                border: 2px solid black;
+                /*overlapping karrane ke lie absolue ka use karenge iske lie parent element ko hamesha realative rakhna hai jaise ki yaha pe div box hai aur yaha pe gap bhi maintained nahi rehta*/
+                position: absolute;
+                top: 20px;
+            }
+            .container3{
+                border: 2px solid yellow;
+                position: sticky;
+                top: 0;
+                
+            }
+            .container4{
+                border: 2px solid red;
+                position: fixed;
+                
+            }
+             
+            
+        </style>
+    </head>
+    <body>
+        <h1>css positions</h1>
+        <!--static,fixed,realtive,absolute,sticky , by default it is static in the webpage-->
+    <div class="box">
+        <img src="/Users/himanshurana/Desktop/selfwebd/webd/css/desktop-wallpaper-triangle-minimalism-black-white-widescreen-black-and-white-minimalist.jpg" alt="" class="container1" height="20px" width="20px">
+        <img src="/Users/himanshurana/Desktop/selfwebd/webd/css/desktop-wallpaper-triangle-minimalism-black-white-widescreen-black-and-white-minimalist.jpg" alt="" class="container2" height="20px" width="20px">
+        <img src="/Users/himanshurana/Desktop/selfwebd/webd/css/desktop-wallpaper-triangle-minimalism-black-white-widescreen-black-and-white-minimalist.jpg" alt="" class="container3" height="20px" width="20px">
+        <img src="/Users/himanshurana/Desktop/selfwebd/webd/css/desktop-wallpaper-triangle-minimalism-black-white-widescreen-black-and-white-minimalist.jpg" alt="" class="container4" height="20px" width="20px">
+
+
+    </div>
+    </body>
+</html>
