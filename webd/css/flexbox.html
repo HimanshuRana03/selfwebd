@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbox</title>
+        <style>
+            .container{
+                background-color:rgb(231, 239, 11);
+                border: 2px solid black;
+                height: 400px;
+                width: 400px;
+                display: flex;
+                flex-direction: row;/*by default row hai*/
+                /*flex-wrap: wrap; same size ke box chahiye squeeze nahi honge box jab tak ki space hai*/
+                /*justify-content: center;*//*ek baar flexdirection row aur col karke bhi dekhna alag alag response aega */
+                align-items: center;
+            }
+            .box{
+                height: 40px;
+                width: 40px;
+                border: 1px solid brown;
+                margin: 2px;
+                padding: 2px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content:center ;
+                text-align: center;
+            }
+            #box1{
+                background-color: aqua;
+            }
+            #box2{
+                background-color: pink;
+            }
+            #box3{
+                background-color: black;
+            }
+            #box4{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!--flexbox is a layout technique using which we can arrange our elements in the webpage
+        by default horizontal main axis hai aur vertical cross axis -->
+        <div class="container">
+            <div class="box" id="box1">abcd</div>
+            <div class="box" id="box2">efgh</div>
+            <div class="box" id="box3">ijkl</div>
+            <div class="box" id="box4">mnop</div>
+        </div>
+    </body>
+</html>
