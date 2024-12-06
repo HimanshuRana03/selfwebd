@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Transitions in css</title>
+         <style>
+            .box{
+                height: 200px;
+                width: 200px;
+                background-color: antiquewhite;
+                border: 3px solid black;
+                transition-property: all;
+                transition-duration: 4s;
+                transition-timing-function: linear;
+                
+            }
+            /*transition lagane ke lie hover karna padega*/
+            .box:hover{
+                height: 200px;
+                width: 200px;
+                background-color: burlywood;
+                border-radius: 300px;
+            }
+         </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
