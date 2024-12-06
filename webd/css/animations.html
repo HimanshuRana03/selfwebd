@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;/*overflow na ho uske liye ye kia hai*/
+        }
+        .container{
+            background-color: antiquewhite;
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid red;
+        }
+        .box{
+            height: 50px;
+            width: 100px;
+            background-color: aliceblue;
+            border: 5px solid black;
+            margin: 5px;
+            padding: 2px;
+            position: relative;
+            animation-name: movement;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 1ms;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes movement {
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left:1325px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+
+            </div>
+        </div>
+    </body>
+</html>
