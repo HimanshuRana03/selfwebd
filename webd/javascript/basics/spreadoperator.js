@@ -33,4 +33,45 @@ print2("hello","hi","h");
 */
 
 /*Destructuring allows us to "unpack" values from data-structures (Arrays, objects) 
-into separate distinct variables*/
+into separate distinct variables
+const arr=[1,2,3,4,5];
+
+const [a,b,c]=arr;
+console.log("a",a);
+console.log("b",b);
+console.log("c",c);
+
+//in functions
+function f() 
+{
+    return [1,2];
+}
+[a1,b1]=f();
+console.log("a1",a1);
+console.log("b1",b1);
+
+//in objects the order does not matter but the name does matter  
+const obj={name:"Himanshu",age:21};
+//const{hello}=obj;
+//console.log(hello); //undefined throw kar raha hai kyuki wo object mai hum phele se hi label declare kar dete hai
+const{name,age}=obj;
+console.log(name);
+//renaming 
+const obj1={a:10,b:30};
+const{a:x,b:y}=obj1;
+console.log(x);
+console.log(y);
+*/
+
+/*for of loop */
+const name="Himanshu";
+for( let char of name)
+{
+    console.log(char);
+}
+
+const arr1=["a","b","c"];
+for(let variable of arr1)
+{
+    console.log(variable);
+}
